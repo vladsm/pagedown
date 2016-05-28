@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>ChessRoll Editor</title>
+		<script src="../../Markdown.Converter.js"></script>
+		<script src="../../Markdown.Editor.js"></script>
+		<script src="../../Markdown.Sanitizer.js"></script>
+	</head>
+	<body>
+		<div>Hello chess roll<div>
+		<div>
+			<div id="wmd-button-bar"></div>
+			<textarea id="wmd-input" class="wmd-input"></textarea>
+			<div id="wmd-preview" class="wmd-panel wmd-preview"></div>
+		</div>
+		
+		<script>
+				var converter = Markdown.getSanitizingConverter();
+				var editor = new Markdown.Editor(converter);
+				editor.run();
+		</script>
+
+	</body>
+</html>
